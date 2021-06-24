@@ -1,0 +1,95 @@
+body {
+  text-align: center;
+  background: radial-gradient(#f2761e, #ef4921);
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: inline-block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 9px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.key{
+  margin-top: 50px;
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-image: url("images/itachi.png");
+}
+
+.green {
+  background-image: url("images/naruto.png");
+}
+
+.blue {
+  background-image: url("images/sasuke.png");
+}
+
+.yellow {
+  background-image: url("images/madara.png");
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@media screen and (max-width: 992px) {
+  .btn {
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+  }
+
+  .key {
+    opacity: 0;
+  }
+
+  .naruto-img {
+    height: 35%;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  #level-title {
+    font-size: 2rem;
+  }
+  .naruto-img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .btn {
+    margin: 2px;
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+    border: 6px solid black;
+}
+
+}
